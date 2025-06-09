@@ -4,6 +4,21 @@
 styles = """
 <style>
 
+/* === تایتل About Me به شکل بنفش طلایی === */
+.about-title {
+  text-align: center;
+  background-color: #6A0DAD;
+  color: #FFD700;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 15px 50px;
+  font-family: 'Century Gothic', sans-serif;
+  font-size: clamp(20px, 4vw, 30px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
 /* === دکمه‌ها (fancy-button) === */
 .fancy-button {
   display: inline-flex;
@@ -63,20 +78,6 @@ styles = """
   font-size: 18px;
 }
 
-/* === هدر طلایی (About Author) === */
-.header-highlight {
-  padding: 20px;
-  background-color: #6A0DAD;
-  margin: 0;
-  color: #FFD700;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: clamp(18px, 3vw, 26px);
-  text-align: center;
-  border-radius: 15px 50px;
-  overflow: hidden;
-  font-weight: 600;
-}
-
 /* === ریسپانسیو موبایل === */
 @media (max-width: 500px) {
   .fancy-button {
@@ -93,7 +94,6 @@ styles = """
 </style>
 """
 
-# Optional: Store in memory if used in Jupyter Notebook
 try:
     get_ipython().run_line_magic('store', 'styles')
 except:
