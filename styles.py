@@ -80,6 +80,58 @@ styles = """
   font-size: 18px;
 }
 
+/* === Table Of Contents: عنوان‌ها === */
+.text-container {
+  text-align: center;
+  font-size: 12px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.text {
+  display: inline-block;
+  padding: 20px 60px; 
+  border-top-left-radius: 60px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 30px;
+  background-color: #6A0DAD;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 22px; 
+  font-family: Century Gothic;
+  width: auto; 
+  text-align: center;
+}
+
+/* === دکمه‌های زیر عنوان TOC === */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px; 
+  height: 60px;
+  margin: 10px auto;
+  background-color: #9B59B6;
+  color: #F8F1FF; 
+  border: none;
+  border-radius: 50px; 
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight:600;
+  font-family: Century Gothic;
+  transition: transform 0.6s ease, background-position 0s ease, color 0.3s ease; 
+}
+
+.button:hover {
+  background-image: linear-gradient(to right, #8E44AD 0%, #6C3483 50%, #8E44AD 100%);
+  background-size: 300% 100%;
+  background-position: 100% 0%; 
+  transform: scale(1.1); 
+  color: #FFD700;
+}
+
 /* === ریسپانسیو موبایل === */
 @media (max-width: 500px) {
   .fancy-button {
@@ -91,11 +143,22 @@ styles = """
     flex-direction: column;
     align-items: center;
   }
+
+  .button {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .text {
+    font-size: 18px;
+    padding: 15px 30px;
+  }
 }
 
 </style>
 """
 
+# Optional: Store in memory if used in Jupyter Notebook
 try:
     get_ipython().run_line_magic('store', 'styles')
 except:
