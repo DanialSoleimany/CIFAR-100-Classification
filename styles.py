@@ -6,11 +6,9 @@ styles = """
 
 /* === تایتل About Me به شکل بنفش طلایی === */
 .about-title {
-  width: 100vw;
-  max-width: 100vw;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 25px auto;
   padding: 20px 10px;
   background-color: #6A0DAD;
   color: #FFD700;
@@ -18,10 +16,10 @@ styles = """
   font-family: 'Century Gothic', sans-serif;
   font-size: clamp(20px, 4vw, 32px);
   text-align: center;
-  border-radius: 0 0 30px 30px;
+  border-radius: 25px;
   box-shadow: 0 4px 12px rgba(106, 13, 173, 0.2);
-  margin: 0 0 25px 0;
 }
+
 
 /* === دکمه‌ها (fancy-button) === */
 .fancy-button {
