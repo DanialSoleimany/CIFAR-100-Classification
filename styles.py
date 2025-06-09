@@ -4,7 +4,6 @@
 styles = """
 <style>
 
-/* === تایتل بنفش-طلایی === */
 .title {
   width: 100%;
   margin: 0 auto 25px auto;
@@ -13,7 +12,7 @@ styles = """
   color: #FFD700;
   font-weight: bold;
   font-family: 'Century Gothic', sans-serif;
-  font-size: clamp(20px, 4vw, 32px);
+  font-size: clamp(16px, 3vw, 26px);  /* کوچکتر از قبل */
   text-align: center;
   border-radius: 25px;
   box-shadow: 0 4px 12px rgba(106, 13, 173, 0.2);
