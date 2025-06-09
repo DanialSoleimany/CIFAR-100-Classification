@@ -7,17 +7,7 @@ styles = """
 /* === تایتل About Me به شکل بنفش طلایی === */
 .about-title {
   width: 90%;
-  max-width: 110px;
-  margin: 0 auto 25px auto;
-  padding: 20px 10px;
-  background-color: #6A0DAD;
-  color: #FFD700;
-  font-weight: bold;
-  font-family: 'Century Gothic', sans-serif;
-  font-size: clamp(20px, 4vw, 32px);
-  text-align: center;
-  border-radius: 25px;
-  box-shadow: 0 4px 12px rgba(106, 13, 173, 0.2);
+
 }
 
 
