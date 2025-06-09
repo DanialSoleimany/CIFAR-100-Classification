@@ -142,8 +142,3 @@ styles = """
 
 </style>
 """
-
-try:
-    get_ipython().run_line_magic('store', 'styles')
-except:
-    pass
