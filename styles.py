@@ -6,9 +6,8 @@ styles = """
 
 /* === تایتل بنفش-طلایی === */
 .about-title {
-  display: block;
-  width: 100vw;  /* تمام عرض صفحه */
-  margin: 0 -20px 25px -20px; /* کمی مارجین منفی برای هم‌راستا شدن با سلول */
+  width: 100%;
+  margin: 0 auto 25px auto;
   padding: 20px 10px;
   background-color: #6A0DAD;
   color: #FFD700;
@@ -16,9 +15,10 @@ styles = """
   font-family: 'Century Gothic', sans-serif;
   font-size: clamp(20px, 4vw, 32px);
   text-align: center;
-  border-radius: 0 0 25px 25px;
+  border-radius: 25px;
   box-shadow: 0 4px 12px rgba(106, 13, 173, 0.2);
 }
+
 
 
 /* === کانتینر معرفی === */
