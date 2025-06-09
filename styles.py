@@ -5,7 +5,7 @@ styles = """
 <style>
 
 /* === تایتل بنفش-طلایی === */
-.about-title {
+.title {
   width: 100%;
   margin: 0 auto 25px auto;
   padding: 20px 10px;
