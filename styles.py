@@ -6,7 +6,7 @@ styles = """
 
 /* === تایتل بنفش-طلایی === */
 .about-title {
-  width: 90%;
+  width: 100%;
   max-width: 1100px;
   margin: 0 auto 25px auto;
   padding: 20px 10px;
