@@ -1,0 +1,100 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+styles = """
+<style>
+
+/* === دکمه‌ها (fancy-button) === */
+.fancy-button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 55px;
+  margin: 8px;
+  background-color: transparent;
+  color: #6A0DAD;
+  border: 2px solid #6A0DAD;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none !important;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Century Gothic', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.fancy-button:hover {
+  background-color: #6A0DAD;
+  color: #FFD700 !important;
+  transform: scale(1.05);
+  text-decoration: none !important;
+}
+
+/* === ردیف دکمه‌ها (سه‌تایی کنار هم) === */
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* === کانتینر معرفی === */
+.about-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  border: 2px solid #B388EB;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #F9F4FF, #F3E8FF);
+  box-shadow: 0 8px 20px rgba(138, 43, 226, 0.15);
+  text-align: center;
+  font-family: 'Century Gothic', sans-serif;
+  color: #4B0082;
+}
+
+.about-container p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.about-container b {
+  font-size: 18px;
+}
+
+/* === هدر طلایی (About Author) === */
+.header-highlight {
+  padding: 20px;
+  background-color: #6A0DAD;
+  margin: 0;
+  color: #FFD700;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: clamp(18px, 3vw, 26px);
+  text-align: center;
+  border-radius: 15px 50px;
+  overflow: hidden;
+  font-weight: 600;
+}
+
+/* === ریسپانسیو موبایل === */
+@media (max-width: 500px) {
+  .fancy-button {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .button-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+</style>
+"""
+
+# Optional: Store in memory if used in Jupyter Notebook
+try:
+    get_ipython().run_line_magic('store', 'styles')
+except:
+    pass
