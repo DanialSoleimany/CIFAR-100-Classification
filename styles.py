@@ -12,7 +12,7 @@ styles = """
   color: #FFD700;
   font-weight: bold;
   font-family: 'Century Gothic', sans-serif;
-  font-size: clamp(16px, 3vw, 26px);  /* کوچکتر از قبل */
+  font-size: clamp(16px, 3vw, 20px);  /* کوچکتر از قبل */
   text-align: center;
   border-radius: 25px;
   box-shadow: 0 4px 12px rgba(106, 13, 173, 0.2);
